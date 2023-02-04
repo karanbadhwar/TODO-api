@@ -1,0 +1,26 @@
+### Fetch All Tasks
+
+GET http://localhost:3200/tasks
+Content-Type: application/json
+
+### Create a New Task
+POST http://localhost:3200/tasks
+Content-Type: application/json
+
+{
+    "title": "Game",
+    "date": "2023-01-03",
+    "description": "Here comes the Game, Dabooooom",
+    "priority": "normal",
+    "status": "todo"
+}
+
+### Update the Task
+
+PUT http://localhost:3200/tasks
+Content-Type: application/json
+
+{
+    "id": "fa006d3b-2dea-4377-9ed1-89401aedee33",
+    "status": "inProgress"
+}
